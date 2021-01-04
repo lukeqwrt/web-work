@@ -1,0 +1,416 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container {
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    top: 0;
+}
+.nav-container nav {
+    width: 86%;
+    height: 100%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-container nav .logo p{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: -1px;
+}
+.nav-container nav .logo span {
+    color: white;
+    font-weight: 100;
+    padding-right: 2px;
+}
+
+ .landing-page{
+    height: 106vh;
+    width: 100%;
+    background-image: url('../mockups/langing-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .landing-page .landing-content{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 260px;
+    left: 100px;
+    
+}
+
+ .landing-page .landing-content h3{
+    font-size: 50px;
+    color: white;
+}
+
+ .landing-page .landing-content span{
+    font-weight: 100;
+}
+ .landing-page .landing-content p{
+    font-size: 23px;
+    color: white;
+    font-weight: 100;
+}
+
+
+ .numbers {
+    margin-top: 150px;
+}
+ .numbers .number-container{
+
+    
+}
+
+ .numbers .number-container .my-numbers{
+    height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  .numbers .number-container .my-numbers h3{
+    font-size: 33px;
+   
+}
+ .numbers .number-container .my-numbers p{
+    font-size: 23px;
+}
+
+ .boxes {
+    margin-top: 150px;
+
+}
+
+ .boxes .box-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .boxes .box-container .mybox{
+    background: white;
+    height: 330px;
+
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 120px 1fr;
+}
+
+ .boxes .box-container .mybox .box-img{
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    height: 60px;
+    width: 80px;
+}
+ .boxes .box-container .mybox img{
+    height: 100%;
+    width: 100%;
+}
+
+ .boxes .box-container .mybox .box-content{
+    grid-row: 2/3;
+}
+
+ .boxes .box-container .mybox .box-content h3{
+    font-size: 30px;
+    padding:20px;
+}
+
+ .boxes .box-container .mybox .box-content p{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 20px 5px 20px; 
+}
+
+ .drawing {
+    position: absolute;
+    right: 0;
+    top: 90%;
+    z-index: -1;
+}
+
+ .apps{
+    margin-top: 190px;
+}
+
+ .apps .reel{
+    height: 400px;
+
+    background: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    /* grid */
+    display: grid;
+    grid-template-rows: 140px 1fr 1fr;
+    
+}
+
+ .apps .reel .reel-img {
+    grid-row: 1/2;
+    height: 190px;
+    width: 290px;
+    justify-self: center;
+    transform: translate(0, -40px);
+}
+ .apps .reel .reel-img img{
+    height: 100%;
+    width: 100%;
+}
+
+ .apps .reel-content{
+    grid-row: 2/3;
+}
+
+ .apps .reel-content h3{
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 2px 15px ;
+    
+}
+ .apps .reel-content span{
+    font-weight: 200;
+   
+}
+
+ .apps .reel-content p {
+    font-size: 15px;
+    padding: 15px;
+    line-height: 30px;
+}
+ .apps .mybtn{
+     height: 100%;
+     width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+ .apps .mybtn button {
+grid-row: 3/4;
+align-self: center;
+justify-self: center;
+height: 50px;
+width: 150px;
+margin-bottom: 30px;
+background: rgb(243, 243, 43);
+border: none;
+color: white;
+font-weight: bolder;
+border-radius: 30px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+ .apps .mybtn button:hover {
+    background: white;
+    color: yellow;
+    box-shadow: -15px 11px 10px rgba(0, 0, 0, 0.5);
+}
+
+.previous {
+    height: 100px;
+    transform: translate(-100px, 250px);
+}
+.mynext {
+    
+    height: 100px;
+    transform: translate(100px, 250px);
+}
+
+@media (max-width: 500px){
+    
+    .previous {
+        height: 100px;
+        transform: translate(0, 0);
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .mynext {
+        background: rgba(0, 0, 0, 0.6);
+        height: 100px;
+        transform: translate(0, 0);
+    }
+    }
+.ceo {
+    z-index: 3;
+    background: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    height:400px;
+    position: absolute;
+    bottom: 90px;
+
+    display: grid;
+    grid-template-rows: 90px 1fr 1fr;
+
+}
+.ceo .test-img{
+    grid-row: 1/2;
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: -60px;
+    justify-self: center;  
+}
+.ceo .test-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.ceo .name {
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+
+    text-align: center;
+}
+
+.ceo .name h3{
+    font-weight: bolder;
+}
+
+.ceo .name p{
+    font-weight: 500;
+}
+
+.ceo p{
+    grid-row: 3/4;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* .mybg{
+    background-image: url('../mockups/oval.png');
+    background-position: center center;
+    background-repeat:  no-repeat;
+    
+    background-size: cover;
+} */
+
+.myoval {
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+.myoval img{    
+    height: 100%;
+    width: 100%;
+
+}
+
+.bg2 {
+    margin-top: 100px;
+    background-image: url('../mockups/bg4.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bglang{
+    margin-top: 170px;
+}
+.my-form{
+    
+    height: 500px;
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+
+    /* grid */
+    display: grid;
+    grid-template-rows: 80px 1fr 150px;
+}
+
+.my-form .title{
+     grid-row: 1/2;
+     align-self: center;
+     justify-self: center;
+}
+
+.my-form .my-input {
+    grid-row: 2/3;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    
+}
+.my-form .my-input input{
+    height: 35px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.my-form .mynumber {
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.my-form .mynumber h3{
+    color: red;
+}
+
+.my-form .mynumber p{
+    color:black;
+    font-size: 16px;
+}
+
+.policy li{
+    list-style: none;
+    
+}
+
+.policy li a{
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+}
+
+.policy li a:hover{
+ color: gray;   
+transform: translate(0,20px);
+}
+
+.policies p {
+    color: rgb(172, 172, 172);
+}
+.email-input .q{
+    width: 210px;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+}
+
+.email-input .w{
+    width: 120px;
+    
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+}
+
+.footer-apps{
+    color: rgb(172, 172, 172);
+}
+
+.updates{
+    color: rgb(172, 172, 172);
+}
